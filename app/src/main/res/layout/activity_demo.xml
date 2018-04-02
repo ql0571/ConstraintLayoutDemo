@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="---"
+        android:textColor="@color/red_color_fa4339"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="280.00" />
+
+    <TextView
+        android:id="@+id/tv_sell_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/tv_trade_price_up"
+        android:text="卖价"
+        android:textColor="@color/text_color_999999"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_trade_price_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textColor="@color/red_color_fa4339"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_sell_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sell_name"
+        tools:text="280.00" />
+
+    <TextView
+        android:id="@+id/tv_buy_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="买价"
+        android:textColor="@color/text_color_999999"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_trade_price_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textColor="@color/common_text_color_green"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_buy_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_buy_name"
+        tools:text="280.00" />
+
+    <TextView
+        android:id="@+id/tv_zj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="卖量"
+        android:textColor="@color/text_color_999999"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_sell_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trade_price_up" />
+
+    <TextView
+        android:id="@+id/tv_sell_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textColor="@color/text_color_333333"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_sell_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_zj2"
+        tools:text="280.00" />
+
+    <TextView
+        android:id="@+id/tv_buy_val_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="买量"
+        android:textColor="@color/text_color_999999"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_buy_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trade_price_up" />
+
+    <TextView
+        android:id="@+id/tv_buy_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textColor="@color/text_color_333333"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_buy_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_buy_val_name"
+        tools:text="280.00" />
+
+    <TextView
+        android:id="@+id/tv_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_price"
+        android:text="--"
+        android:textColor="@color/red_color_fa4339"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price"
+        tools:text="1.23" />
+
+    <TextView
+        android:id="@+id/tv_fd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_zd"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tv_price"
+        android:text="--"
+        android:textColor="@color/red_color_fa4339"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_zd"
+        app:layout_constraintTop_toTopOf="@+id/tv_zd"
+        tools:text="+1.23%" />
+
+    <TextView
+        android:id="@+id/tv_buy_up"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red_selector"
+        android:gravity="center"
+        android:text="模拟买涨"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_l"
+        app:layout_constraintRight_toLeftOf="@+id/tv_buy_down"
+        app:layout_constraintTop_toBottomOf="@id/tv_sell_val" />
+
+    <TextView
+        android:id="@+id/tv_buy_down"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_green_selector"
+        android:gravity="center"
+        android:text="模拟买跌"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/tv_buy_up"
+        app:layout_constraintRight_toLeftOf="@+id/tv_buy_close"
+        app:layout_constraintTop_toTopOf="@+id/tv_buy_up" />
+
+    <TextView
+        android:id="@+id/tv_buy_close"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_yellow_selector"
+        android:gravity="center"
+        android:text="模拟平仓"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/tv_buy_down"
+        app:layout_constraintRight_toRightOf="@id/guideline_r"
+        app:layout_constraintTop_toTopOf="@+id/tv_buy_down" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="5dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="5dp" />
+</android.support.constraint.ConstraintLayout>
