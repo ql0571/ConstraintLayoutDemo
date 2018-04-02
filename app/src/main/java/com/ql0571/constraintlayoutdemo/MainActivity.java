@@ -16,4 +16,8 @@ public class MainActivity extends AppCompatActivity {
     public void onDemoClick(View v) {
         startActivity(new Intent(this, DemoActivity.class));
     }
+
+    public void onConstraintClick(View v) {
+        startActivity(new Intent(this, ConstraintActivity.class));
+    }
 }
